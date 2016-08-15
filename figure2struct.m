@@ -1,9 +1,9 @@
 function h = figure2struct(src)
-% Separates graphics objects in axes into fields of a struct.
+% Separates graphics objects in a figure/axes into fields of a struct.
 %
 % h = figure2struct(src)
 %
-% src : handle of a figure, an axes or handles of its children.
+% src : handle of a figure, an axes, or handles of its children.
 %       gcf by default.
 %       When a figure is given, the returning struct h has the same
 %       number of rows and columns as the subplots.
