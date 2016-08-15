@@ -1,5 +1,5 @@
 # figure2struct
-Categorize MATLAB graphics objects in axes/figure and return them as fields of a structure
+Categorize MATLAB graphics objects in a figure/axes and return them as fields of a structure
 
   h = figure2struct(src)
  
