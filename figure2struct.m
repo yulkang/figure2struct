@@ -24,7 +24,14 @@ function h = figure2struct(src)
 % - crossline (line that spans at least one axis)
 % - nonsegment (lines that connect more than two points).
 %
-% See also subplot_by_pos
+% NOTE:
+% To use just one axes out of multiple subplots, use:
+%   copyobj(h(row,col).axes, figure);
+%   
+% To find a subset of the objects, use findobj. For example:
+%   red_markers = findobj(h(row,col).marker, 'Color', [1 0 0]);
+%
+% See also subplot_by_pos, copyobj, findobj
 
 % Yul Kang (c) 2016. hk2699 at columbia dot edu.
 
